@@ -1,0 +1,240 @@
+<!DOCTYPE> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>一些常用的css例子</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<style>
+	body{
+		font-size: 12px;
+	}
+	ul,li{list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.css-con{
+		padding: 15px;
+	}
+	.clearfix:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.clearfix:before{
+		display: table;
+		content: " ";
+	}
+</style>
+<body>
+	<!-- <h2>一些常用的css例子</h2> -->
+
+	<style>
+		.s-line-title{
+			height: 30px;
+		}
+		.s-line-title span{
+			float: left;
+			padding-right: 18px;
+			line-height: 30px;
+			background: #fff;
+		}
+		.center-line{
+			margin-top: 15px;
+			border-bottom: 1px solid #ccc;
+			width: 100%;
+			height: 0;
+		}
+	</style>
+	<article>
+		<h5></h5>
+		<div class="css-con">
+			<style>
+				.s-line-title{
+					height: 30px;
+				}
+				.s-line-title span{
+					float: left;
+					padding-right: 18px;
+					line-height: 30px;
+					background: #fff;					
+				}
+				.center-line{
+					margin-top: 15px;
+					border-bottom: 1px solid #ccc;
+					width: 100%;
+					height: 0;
+				}
+			</style>
+			<div class="s-line-title clearfix">
+				<span>个人中心</span>
+				<div class="center-line"></div>
+			</div>
+		</div>
+	</article>
+
+
+
+	<article>
+		<h5></h5>
+		<div class="css-con ">
+			<style>
+				.line-or{
+					position: relative;
+				}
+				span.line-or-span{
+					display: inline-block;
+					width: 40px;
+					text-align: center;
+					left: 50%;
+					margin-left: -20px;
+					height: 30px;
+					line-height: 30px;
+					position: absolute;
+					padding-right: 0;
+				}
+			</style>
+			<div class="s-line-title clearfix line-or">
+				<span class="line-or-span">或</span>
+				<div class="center-line"></div>
+			</div>
+		</div>
+	</article>
+
+
+
+	<article>
+		<h5></h5>
+		<div class="css-con ">
+			<style>
+				.title1{
+					width: 100%;
+					line-height: 30px;
+					text-indent: 10px;
+					border-bottom: 3px solid #ccc;
+					position: relative;
+				}
+				.title1:after{
+					content: '';
+					border-bottom: 3px solid blue;
+					width: 95px;
+					display: table;
+					bottom: -3px;
+					position: absolute;
+				}
+			</style>
+			<div class="title1">
+				这是一个标题
+			</div>
+		</div>
+	</article>
+
+
+	<article>
+		<h5></h5>
+		<div class="css-con ">
+			<style>
+				.css3_wrap1{
+					/*border: 1px solid #ccc;*/
+					height: 100px;
+					width: 100px;
+					background: #ccc;	
+					overflow: hidden;
+					position: relative;
+					display: inline-block;
+				}
+				.css3_inner1{
+					height: 100px;
+					width: 100px;
+					background: black;	
+					color:#fff;
+					transform-origin: -50% 50%;
+					transition: all 0.3s ease-in;
+					transform: rotate3d(0,0,1,90deg);
+					font-size: 30px;
+					line-height: 100px;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+				.css3_wrap1:hover .css3_inner1{
+					transform:rotate(0deg);
+				}
+			</style>
+			<div class="css3_wrap1">
+				鼠标移动上来
+				<div class="css3_inner1">
+					哈哈
+				</div>
+			</div>
+			<div class="css3_wrap1">
+				鼠标移动上来
+				<div class="css3_inner1">
+					哈哈
+				</div>
+			</div>
+			<div class="css3_wrap1">
+				鼠标移动上来
+				<div class="css3_inner1">
+					哈哈
+				</div>
+			</div>
+		</div>
+	</article>
+
+
+
+	<article>
+		<h5></h5>
+		<div class="css-con ">
+			<div class="css3_wrap2">
+				<img src="images/koala.jpg">
+			</div>
+
+			<style>
+				.css3_wrap2{
+					height: 110px;
+					width: 86px;
+					overflow: hidden;
+				}
+				.css3_wrap2 img{
+					transition: 0.3s;
+					height: 110px;
+					width: 86px;
+					transform-origin: 50% 50%;
+				}
+				.css3_wrap2:hover img{
+					transform:scale(1.5,1.5);
+				}
+			</style>
+		</div>
+	</article>
+
+
+	<article>
+		<h5></h5>
+		<div class="css-con ">
+
+
+			<style>
+				.trange{
+					border: 50px solid #ccc;
+					border-left-color: transparent;
+					border-right-color: transparent;
+					width: 0;
+					border-top: none;
+				}
+			</style>
+			<div class="trange"></div>
+		</div>
+	</article>
+
+
+	<article>
+		checkbox样式
+		图片垂直居中
+	</article>
+
+
+</body>
+</html>
