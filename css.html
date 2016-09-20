@@ -251,7 +251,6 @@
 					/*清除默认的一些间隔*/
 				}
 				.li_inner{
-
 					display: inline-block;
 					height: 30px;
 					width: 50px;
@@ -340,7 +339,45 @@
 		</div>
 	</article>
 
+	<article>
+		<h5>纯css带箭头的信息框</h5>
+		<div class="css-con ">
 
+			<div class="trangle-ul">
+				信息框
+			</div>
+
+			<style>
+				.trangle-ul{
+					height: 50px;
+					width: 50px;
+					position: relative;
+					border:1px solid #e5e5e5;
+				}
+
+				.trangle-ul:before{
+					content: "";
+					position: absolute;
+					top: -15px;
+					right: 9px;
+					width: 0px;
+					height: 0px;
+					border: 7px solid transparent;
+					border-bottom-color: #e5e5e5;
+				}
+				.trangle-ul:after{
+					content: "";
+					position: absolute;
+					top: -12px;
+					right: 10px;
+					width: 0px;
+					height: 0px;
+					border: 6px solid transparent;
+					border-bottom-color: #FFF;
+				}
+			</style>
+		</div>
+	</article>
 
 
 
@@ -349,6 +386,8 @@
 	<article>
 		checkbox样式
 		图片垂直居中
+		透明度。input。日历。
+		select样式修复
 	</article>
 
 
